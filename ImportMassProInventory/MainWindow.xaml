@@ -1,0 +1,18 @@
+﻿<Window x:Class="ImportMassProInventory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:ImportMassProInventory"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1100" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dgrResults" IsReadOnly="True" HorizontalAlignment="Left" Height="503" Margin="10,56,0,0" VerticalAlignment="Top" Width="889" AlternationCount="1" RowBackground="AliceBlue" AlternatingRowBackground="LightBlue"/>
+        <Button x:Name="btnImportExcel" Content="Import Excel" FontSize="18" HorizontalAlignment="Left" Margin="925,169,0,0" VerticalAlignment="Top" Width="131" Height="54" Click="BtnImportExcel_Click"/>
+        <Button x:Name="btnProcess" Content="Process" FontSize="18" HorizontalAlignment="Left" Margin="924,237,0,0" VerticalAlignment="Top" Width="131" Height="54" Click="BtnProcess_Click"/>
+        <ComboBox x:Name="cboSelectWarehouse" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" HorizontalAlignment="Left" Margin="924,112,0,0" VerticalAlignment="Top" Width="131" Height="37" SelectionChanged="CboSelectWarehouse_SelectionChanged"/>
+        <Label x:Name="lblCurrentWarehouse" Content="Current Warehouse" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="1072" Height="41"/>
+
+    </Grid>
+</Window>
